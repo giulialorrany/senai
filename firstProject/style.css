@@ -1,0 +1,42 @@
+body{
+padding:0px;
+margin:0px;
+
+
+}
+#linkList, #logoSearch{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+
+#linkList{
+   
+    background-color: rgb(140, 127, 255);
+    width: 16%;
+    /* line-height: 152px; */
+    padding-bottom: 330px;
+    /* height: 10%; */
+/* achei que eu queria salvar o mundo, mas eu queria me salvar do mundo */
+
+#linkList ul {
+    /* line-height: -101px; */
+    position:absolute; 
+    
+line-height: 80px;
+}
+
+linkList li{
+}
+
+#logoSearch{
+    
+    /* width: 50%; */
+}
+
+.logoCogu{
+}
+
+#search{
+
+}
