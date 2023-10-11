@@ -5,63 +5,38 @@ margin:0px;
 
 }
 #linkList, #logoSearch{
-    /* width: 100px; */
-    /* height: 100px; */
+    width: 100px;
+    height: 100px;
     display: inline-block;
-  
 }
-
-
-#logoSearch{
-    width: 84%;
-    background-color: rgb(255, 245, 245);
-}
-
 
 #linkList{
-
+   
     background-color: rgb(140, 127, 255);
     width: 16%;
-    position: absolute;
-    height: 45%;
-
-}
     /* line-height: 152px; */
-  
+    padding-bottom: 330px;
+    /* height: 10%; */
 /* achei que eu queria salvar o mundo, mas eu queria me salvar do mundo */
 
-/* #linkList ul {
+#linkList ul {
+    /* line-height: -101px; */
     position:absolute; 
     
 line-height: 80px;
-} */
+}
 
 linkList li{
 }
 
 #logoSearch{
+    
+    /* width: 50%; */
 }
 
-#divLg{
-text-align: center;
-}
 .logoCogu{
-    padding:3% 0 0.3% 0;
-    padding-left:28%;
-    
 }
 
 #search{
 
-}
-#divInputS{
-    padding-left: 55.5%;/* +2 do padding-right adcionado */
-    padding-bottom:20px;
-
-    
-}
-.inputSearch {
-    border: 1px solid gray;
-    border-radius: 10px;
-    padding:6px 46px;
 }
