@@ -1,66 +1,112 @@
-body{
-padding:0px;
-margin:0px;
-width: 100%;
-}
-
-#cabecalho{
+*{
+    padding:0;
+    margin:0;
     width: 100%;
-    background-color: rgb(107, 65, 162);
-    /* posicionamento padrão: esquerda, topo e em coluna */
-    display: flex ;/*, muda para linha */
-    /* justify-content:center; */
-    /* row - linha */
-    /* column - coluna */
-    /* reverse - inverte */
- 
-    /* flex-direction: row;, muda a direção do flexbox */
-    /* justify-content: center;, muda a orientação horizontal do flexbox */
-    align-items: start; /* muda a orientação vertical do flexbox */
-    /* flex-wrap: wrap;, evita distorções com falta de espaço */
-    gap: 230px;/* espaçamento entre elementos */
-}
-
-#blocoOne{
-    /* margin: 0px 100px 10px 39px; */
-}
-
-#blocoOne img{
-    margin-left: 60px;
-}
-
-#blocoTwo{
-margin-top:90px;
-
-}
-#blocoTwo img{
-margin-right:40px;
-/* arrumar lupa junto com img */
-}
-
-#inputSearch{
-    border:none;
-    border-radius:6px;
-    padding: 24px 144px 0px 0px;
-    margin-left:-45px;
-    /* resolver a imagem da lupa */
-}
-
-
-#blocoTree{
-    background:blue;    
-    /* //um jeito melhor de alinhar no canto esquerdo?     */
+    }
     
-}
-#blocoTree ul{
-    /* text-align: right; */
-    /* position: absolute; */
-    margin-left:90px;
-}
+    /* variavel largura (de tamanho) */
 
-#blocoTree ul li{
-    text-align: left;
-}
+    :root{
+        /* HEADER  */
+            /* blocoOne */
+    
+            /* blocoTwo */
+                /* --tamLupa:; */
+                /* --espLupa:; */
+    
+            /* blocoTree */
+                
+    
+        }
+
+        /* CONFIGURAR EM OUTROS TAMANHOS(CELULAR E MEU COMPUTADOR) */
+        /* @media screen ( min-width: myPcpx) and (max-width: talspx;){
+
+            HEADER
+            BlocoOne
+             .logoCogu{
+                width:190px;
+            }
+             .lupaLogo{
+                width:40PX;
+            }
+
+        } */
+
+
+
+
+
+        
+        body{
+            flex-direction: column  ;
+        }
+
+
+
+
+
+    #cabecalho{
+        width: 100%;
+        background-color: rgb(107, 65, 162);
+        /* posicionamento padrão: esquerda, topo e em coluna */
+        display: flex ;/*, muda para linha */
+        /* justify-content:center; */
+        /* row - linha */
+        /* column - coluna */
+        /* reverse - inverte */
+     
+        /* flex-direction: row;, muda a direção do flexbox */
+        /* justify-content: center;, muda a orientação horizontal do flexbox */
+        align-items: start; /* muda a orientação vertical do flexbox */
+        /* flex-wrap: wrap;, evita distorções com falta de espaço */
+        gap: 230px;/* espaçamento entre elementos */
+    }
+    
+    #blocoOne{
+        /* margin: 0px 100px 10px 39px; */
+    }
+    
+    .logoCogu{
+        margin-left: 60px;
+    }
+    
+    #blocoTwo{
+    margin-top:90px;
+    
+    }
+    .lupaLogo{
+    margin-right:40px;
+    /* arrumar lupa junto com img */
+    }
+    
+    #inputSearch{
+        border:none;    
+        border-radius:6px;
+        padding: 24px 144px 0px 0px;
+        margin-left:-45px;
+        /* resolver a imagem da lupa */
+    }
+    
+    
+    #blocoTree{
+        background:blue;    
+        width: 49%;
+        
+    }
+    #blocoTree ul{
+        /* text-align: left; */
+        /* position: absolute; */
+        /* margin-left:90px; */
+    
+    }
+    
+    #blocoTree ul li{
+        text-align: center;
+    }
+    
+    
+    
 
 
 
@@ -68,6 +114,38 @@ margin-right:40px;
 
 
 
-/* achei que eu queria salvar o mundo, mas eu queria me salvar do mundo */
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* achei que eu queria salvar o mundo, mas eu queria me salvar do mundo */
