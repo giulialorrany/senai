@@ -1,41 +1,74 @@
 body{
 padding:0px;
 margin:0px;
-
-
-}
-#linkList, #logoSearch{
-    width: 100px;
-    height: 100px;
-    display: inline-block;
+width: 100%;
 }
 
-#linkList{
-   
-    background-color: rgb(140, 127, 255);
-    width: 16%;
-    /* line-height: 152px; */
-    padding-bottom: 330px;
-    /* height: 10%; */
+#cabecalho{
+    width: 100%;
+    background-color: rgb(107, 65, 162);
+    /* posicionamento padrão: esquerda, topo e em coluna */
+    display: flex ;/*, muda para linha */
+    /* justify-content:center; */
+    /* row - linha */
+    /* column - coluna */
+    /* reverse - inverte */
+ 
+    /* flex-direction: row;, muda a direção do flexbox */
+    /* justify-content: center;, muda a orientação horizontal do flexbox */
+    align-items: start; /* muda a orientação vertical do flexbox */
+    /* flex-wrap: wrap;, evita distorções com falta de espaço */
+    gap: 230px;/* espaçamento entre elementos */
+}
+
+#blocoOne{
+    /* margin: 0px 100px 10px 39px; */
+}
+
+#blocoOne img{
+    margin-left: 60px;
+}
+
+#blocoTwo{
+margin-top:90px;
+
+}
+#blocoTwo img{
+margin-right:40px;
+/* arrumar lupa junto com img */
+}
+
+#inputSearch{
+    border:none;
+    border-radius:6px;
+    padding: 24px 144px 0px 0px;
+    margin-left:-45px;
+    /* resolver a imagem da lupa */
+}
+
+
+#blocoTree{
+    background:blue;    
+    /* //um jeito melhor de alinhar no canto esquerdo?     */
+    
+}
+#blocoTree ul{
+    /* text-align: right; */
+    /* position: absolute; */
+    margin-left:90px;
+}
+
+#blocoTree ul li{
+    text-align: left;
+}
+
+
+
+
+
 /* achei que eu queria salvar o mundo, mas eu queria me salvar do mundo */
 
-#linkList ul {
-    /* line-height: -101px; */
-    position:absolute; 
-    
-line-height: 80px;
-}
 
-linkList li{
-}
-
-#logoSearch{
-    
-    /* width: 50%; */
-}
-
-.logoCogu{
-}
 
 #search{
 
