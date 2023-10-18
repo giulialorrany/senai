@@ -19,21 +19,6 @@
     
         }
 
-        /* CONFIGURAR EM OUTROS TAMANHOS(CELULAR E MEU COMPUTADOR) */
-        /* @media screen ( min-width: myPcpx) and (max-width: talspx;){
-
-            HEADER
-            BlocoOne
-             .logoCogu{
-                width:190px;
-            }
-             .lupaLogo{
-                width:40PX;
-            }
-
-        } */
-
-
 
 
 
@@ -108,13 +93,82 @@
     
     
 
+        /* CONFIGURAR EM OUTROS TAMANHOS(CELULAR E MEU COMPUTADOR) */
+        /* @media screen ( min-width: myPcpx) and (max-width: talspx;){
+
+            HEADER
+            BlocoOne
+             .logoCogu{
+                width:190px;
+            }
+             .lupaLogo{
+                width:40PX;
+            }
+
+        } */
 
 
+        /* Tamanho S20 GALAXYX */
+        @media screen and (min-width: 412px) and (max-width: 915px){
+
+            *{
+                padding:0;
+                margin:0;
+                width: 100%;
+                }
 
 
+            /* HEADER */        
+            #cabecalho{
+                gap: 230px;
+            }
+            
 
+            #blocoOne{
+                /* margin: 0px 100px 10px 39px; */
+            }
+            
+            .logoCogu{
+                width: 100px;
+                margin-left: 60px;
+            }
+            
+            #blocoTwo{
+            margin-top:90px;
+            
+            }
+            .lupaLogo{
+            margin-right:40px;
+            /* arrumar lupa junto com img */
+            }
+            
+            #inputSearch{
+                border:none;    
+                border-radius:6px;
+                padding: 24px 144px 0px 0px;
+                margin-left:-45px;
+                /* resolver a imagem da lupa */
+            }
+            
+            
+            #blocoTree{
+                background:blue;    
+                width: 49%;
+                
+            }
+            #blocoTree ul{
+                /* text-align: left; */
+                /* position: absolute; */
+                /* margin-left:90px; */
+            
+            }
+            
+            #blocoTree ul li{
+                text-align: center;
+            }
+            
 
-
+        } 
 
 
 
