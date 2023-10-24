@@ -1,1 +1,107 @@
-slj
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista 2</title>
+</head>
+<body>
+    <section>
+        <!-- <img> aqui -->
+        <div>
+            <p id="title">LISTA DE PREÇOS</p>
+            <div>
+                <p>LAVAGEM E PENTEADO            R$90</p>
+                <br>
+                <p>LAVAR, CORTAR E PENTEAR        R$110</p>
+                <br>
+                <p>TINTA              R$130</p>
+                <br>
+                <p>REFLEXOS            R$150</p>
+                <br>
+                <p>PERMANENTE            R$130</p>
+                <br>
+                <p>CALIFORNIANS            R$145</p>
+                <br>
+                <p>SELANTE            R$150</p>
+                <br>
+                <p>ESCREVA MAIS TEXTO AQUI             R$</p>
+                <br>
+                <p>ESCREVA MAIS TEXTO AQUI             R$</p>
+                <br>
+                <p>ESCREVA MAIS TEXTO AQUI             R$</p>
+                <br>
+                <p>ESCREVA MAIS TEXTO AQUI             R$</p>
+                <br>
+                <p>ESCREVA MAIS TEXTO AQUI             R$</p>
+                <br>
+                <p>            R$</p>
+                <br>
+                <p>            R$</p>
+            </div>
+                <P>YOUTWEBWHERE.COM</P>
+                <P>Mais informações entre em contato pelo número (61)91884-5390</P>
+        </div>
+    </section>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista 1</title>
+</head>
+<body>
+    <title>
+        <h1>DINHEIRO <BR> LISTA DE PREÇOS</h1>
+    </title>
+    
+    <!-- borda pontilhada -olhar no google-->
+
+    <div>
+
+        <h3>NOME DO VINHO | 750ml          R$</h3>
+        <P>descrição do vinho</P>
+
+        <h3>NOME DO VINHO | 750ml          R$</h3>
+        <P>descrição do vinho</P>
+
+        <h3>NOME DO VINHO | 750ml          R$</h3>
+          <P>descrição do vinho</P>
+
+        <h3>NOME DO VINHO | 750ml          R$</h3>
+          <P>descrição do vinho</P>
+
+        <h3>NOME DO VINHO | 750ml          R$</h3>
+          <P>descrição do vinho</P>
+
+        <h3>NOME DO VINHO | 750ml          R$</h3>
+          <P>descrição do vinho</P>
+
+        <h3>NOME DO VINHO | 750ml          R$</h3>
+         <P>descrição do vinho</P>
+
+
+         <!-- borda pontilhada -->
+
+        <!-- endereço -->                   <!-- meu logo -->
+        
+
+
+    </div>
+    
+</body>
+</html>
