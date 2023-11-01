@@ -9,8 +9,10 @@
     body{
         margin:0px;
         padding:0px;
+        font-family: monospace;
+        background-color: rgba(98, 187, 8, 0.671);
     }
-    header h1{
+    header h1{  
         text-align: center;
         font-family:Verdana, Geneva, Tahoma, sans-serif;
         /* rever como faz isso */
@@ -22,6 +24,7 @@
         display:flex;
         align-items:center;
         flex-direction: column;
+        background-color: white;
     }
     section h2{
        text-align: center;
@@ -34,18 +37,45 @@
         display:flex;
         flex-direction: column;
         font-size:17px;
+        background-color: aliceblue;
     }
-    #butLog{
+    #butEnviar{
         font-size:14px;
         margin:0 auto 22px auto;
         align-items: center;
         height:22px;
         width:55px; 
+        background-color: rgba(103, 9, 158, 0.623);
+        color:aliceblue;
         
     }
-    .senhaE{
+    .forgotPass{
         text-align: center;
+        margin-bottom:20px;
     }
+    .forgotPass a{
+        text-decoration: none;
+        color:black;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+    }
+    .forgotPass a:hover{
+        color:rgb(82, 163, 1);
+    }
+    .cad{
+        text-align: center;
+        margin-bottom:20px;
+    }
+    .cad a{
+        text-decoration: none;
+        font-size:17px;
+        color:rgba(109, 18, 161, 0.986);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .cad a:hover{
+        color:rgba(109, 18, 161, 0.986);
+    }
+   /* definir a paleta de cores e tom: marrom, verde e roxo */
   </style>
 </head>
 <body>
@@ -58,22 +88,196 @@
 
                 <form actiom="login.js" method="POST">
                     <div>
-                        <label for="email">Email:</label>
-                        <input type="text" id="email" name="email">
+                        <input type="text" id="email" name="email" placeholder="Email">
                     </div><br>
                     <div>
-                        <label for="senha">Senha:</label>
-                        <input type="password" id="senha" name="senha">
+                        <input type="password" id="senha" name="senha" placeholder="Senha">
                     </div><br>
-                    <input id="butLog" type="submit" value="Logar">
+                    <input id="butEnviar" type="submit" value="Logar">
                 </form>
-                    <a href="#" class="senhaE">Esqueci a senha</a>
+                    <div class="forgotPass">
+                        <a href="senha.html" >Esqueci a senha</a>
+                    </div>
                 
             </div>
             
         </section>
         
-        <a href="#">Cadastrar</a>
+        <div class="cad">
+            <a href="cadastro.html">Cadastrar</a>
+        </div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
+
+<!-- todo mundo arrisca a vida por amor, se não por que você tá vivendo se não é por amor? é impossivel viver sem amor --> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperar Senha</title>
+  <style>
+    body{
+        margin:0px;
+        padding:0px;
+        font-family: monospace;
+        background-color: rgba(98, 187, 8, 0.671);
+    }
+    header h1{  
+        text-align: center;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        /* rever como faz isso */
+        transition: right purple green;
+    }
+    section{
+        margin: 20px 50vh;
+        border:1px solid;
+        display:flex;
+        align-items:center;
+        flex-direction: column;
+        background-color: white;
+    }
+    section h2{
+       text-align: center;
+          }
+    form{
+        display:flex;
+        flex-direction: column;
+    }
+    form p{
+        text-align: center;
+        font-family: monospace;
+    }
+    input, label{
+        margin: 0 auto;
+        display:flex;
+        flex-direction: column;
+        font-size:17px;
+        background-color: aliceblue;
+    }
+    #butEnviar{
+        font-size:14px;
+        margin:-20px auto 22px auto;
+        align-items: center;
+        height:22px;
+        width:55px; 
+        background-color: rgba(103, 9, 158, 0.623);
+        color:aliceblue;
+        
+    }
+    .Login{
+        text-align: center;
+        margin-bottom:20px;
+    }
+    .Login a{
+        text-decoration: none;
+        color:black;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+    }
+    .Login a:hover{
+        color:rgb(89, 172, 7);
+    }
+    .cad{
+        text-align: center;
+        margin-bottom:20px;
+    }
+    .cad a{
+        text-decoration: none;
+        font-size:17px;
+        color:rgba(109, 18, 161, 0.986);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .cad a:hover{
+        color:rgba(109, 18, 161, 0.986);
+    }
+   /* definir a paleta de cores e tom: marrom, verde e roxo */
+  </style>
+</head>
+<body>
+    <header>
+        <h1>Cogumelouco</h1>
+    </header>
+        <section>
+            <div>
+                <h2>Recuperar Senha</h2>
+
+                <form actiom="login.js" method="POST">
+                    <div>
+                        <p>Coloque aqui o seu email ou telefone <br>e enviaremos um código para a recuperar a senha</p>
+                        <input type="text" id="email" name="email" placeholder="Email, Telefone">
+                    </div><br>
+                    <div>
+                    </div><br>
+                    <input id="butEnviar" type="submit" value="Enviar">
+                </form>
+                    <div class="Login">
+                        <a href="login.html" >Login</a>
+                    </div>
+                
+            </div>
+            
+        </section>
+        
+        <div class="cad">
+            <a href="cadastro.html">Cadastrar</a>
+        </div>
 <!-- Code injected by live-server -->
 <script>
 	// <![CDATA[  <-- For SVG support
