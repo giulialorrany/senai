@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+
+        :root{
+            --cinza: #e8e6e6;
+            --branco: #ffffff;
+            --preto: #000000;
+        }
+        body{
+            width: 80vh;
+            height: 100vh;
+            background-color: var(--branco);
+            display:flex;
+            flex-direction:column;
+            align-items: center;
+        }
+        header{
+            width: 80%;
+        }
+
+        nav{
+            display:flex;
+            justify-content: right;
+        }
+
+        nav > a{
+            margin-left:8px;
+        }
+        header img{
+
+        }
+
+        main{
+            display:flex;
+            width: 60%;
+        }
+        h1,h2{
+            font-size: 16px;
+        }
+        article{
+            padding:5px;
+        }
+        .container{
+            background: var(--cinza);
+        }
+
+        .container > h1{
+            background: var(--branco);
+            background: var(--preto);
+        }
+        p{
+            padding: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Serviços</a>
+            <a href="#">Portifólio</a>
+            <a href="#">Novidades</a>
+            <a href="#">Contato</a>
+        </nav>
+    </header>
+    <main>
+        <!--2 colunas = main>(section.container>h1=article)*2 | css{main:display flex, width: 60%/80%, body: flex-direction:column}-->
+        <section class="container">
+            <h1>Serviço</h1>
+            <article>
+                <h2>Desenvolvimento de sites</h2>
+                    
+                    <p>
+                        But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual
+                        teachings of the great explorer of the truth
+                    </p>
+                    <p>
+                        the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do 
+                                        not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it
+                        is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+                    </p>
+                    <p>
+                        To take a trivial example, which of us ever undertakes laborious physical 
+                                        exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain 
+                                        that produces no resultant pleasure
+                    </p>
+            </article>
+        </section>
+        <section class="container">
+            <h1>Agenda</h1>
+            <article>
+                <p>
+                    teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do
+                        not know how to pursue pleasure rationally encounter consequences that are extremely painful.
+                </p>
+                <p>
+                    Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it
+                        is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example,
+                </p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <code># Entre em contato</code>
+        <pre># Copyright 2009 Peixe Grande All</pre>
+        <pre># Entre em contato</pre>
+    </footer>
+</body>
+</html>
