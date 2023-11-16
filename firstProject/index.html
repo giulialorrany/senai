@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" >
     <!-- sites de referencia/inspiração = https://www.fungodequintal.com.br/, https://www.cogunutriarte.com.br/, https://artcogumelos.com.br/ -->
     <title>Document</title>
 </head>
@@ -14,36 +15,68 @@
         
               <!-- trabalhar com flexbox aqui(na organização, alinhamento) -->
               <div id="blocoOne">
-                <img src="coguIcon.jpg" class="logoCogu" alt="" width="60px"> 
+                <img src="pictures/coguIcon.jpg" class="logoCogu" alt="" > 
+                <h1>CogumeLouco</h1>
                 <!-- link = https://br.pinterest.com/pin/730568370797703586/ -->
               </div>    
         
               <div id="blocoTwo">
-                <img src="lupa.png" alt="" class="lupaLogo" height="40px"> <!-- link = https://www.iconfinder.com/icons/2178428/find_lupa_search_icon-->
+                <img src="pictures/lupaLogo2.png" alt="" class="lupaLogo" > <!-- link = https://www.iconfinder.com/icons/2178428/find_lupa_search_icon-->
                 <input id="inputSearch" type="text">
               </div>
         
               <div id="blocoTree">
                 <ul type="none">
-                    <li>home</li>
-                    <li>carrinho</li>
-                    <li>mais</li>
+                    <li><a class="home paginaAtual" href="index.html">Home</a></li>
+                    <li><a class="catalogo" href="catalogo.html">Catálogo</a></li>
+                    <li><a class="sobreNos" href="sobrenos.html">Sobre nós</a></li>
                 </ul>
               </div>
       </section>
 
-      <div>
+      <!-- CÓDIGO PRA DESENVOLVIMENTO FUTURO  
+        <nav>
         <ul>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
+          <li><a href="#">galeria</a></li>
+          <li><a href="#">options</a></li>
+          <li><a href="#">options</a></li>
         </ul>
-      </div>
+      </nav> -->
     </header>    
         
     <main>
         <Section id="promocoes"><!-- mostra seta carregando até passar pro lado caso mouse esteja em cima dela e n seja clicado -->
          
+          <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="img1" src="pictures/cogus.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img class="img2"  src="pictures/cogu4.webp" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img class="img3" src="pictures/cogu2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img class="img4" src="pictures/cogu3.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+
+
+
+
+
               <div id="pasSeta">
                 <div id="imagem1">
                
@@ -57,16 +90,19 @@
               </div>
         
         </Section>
+
         
     </main>
-
-    
+    <footer>
+      <p>CopyRight  @giulia Lorrany-2023</p>
+    </footer>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>   
 </body>
 </html>
 
 <!-- DICAS: -->
         <!--2 colunas = main>(section.container>h2=article)*2 | css{main:display flex, width: 60%/80%, body: flex-direction:column}-->
-
 
 
 
