@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salário Família</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    
+<script>
+        btnCalc.addEventListener("click, function");
+
+        function calcular(){
+            var empregado = document. querySelector("#empregado").value;
+            var filhos = document. querySelector("#filhos").value;
+            var salario = document. querySelector("#salario").value;
+            var btnCalc = document. querySelector("#btnCalc").value;
+
+            if(filhos == 0 || salario == 0){
+                resultadoSpan.innerHTML = 'Dados inválidos! Insira o resultado corretamente';
+            }
+
+            if(salario <= 806.80){
+                let resultado = filhos * 41.37;
+                resultadoSpan.innerHTML = 'O salário família do empregado $empregado é de R${resultado}';
+            }else if(salario >= 806.81 && salario <= 1212.64){
+                resultadoSpan.innerHTML = 'Não há salário família para o empregado ${empregado}';
+            }
+}
+    </script>
+</body>
+</html>
