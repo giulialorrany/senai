@@ -1,3 +1,4 @@
+1-
 Afim de testar seus conhecimentos e desafiar-se a uma atividade diferente, você esta sendo solicitado a replicar a pagina web do Amazon prime video. 
 Esta atividade tem cunho didatico, não devendo ser usada de forma indevida.
 Todo o material necessario esta disponivel no arquivo anexo.
@@ -5,53 +6,54 @@ O link da pagina a ser replica também esta disponivl abaixo.
 Crie um repositorio novo no github com o nome "prime-video" e desenvolve esta atividade neste repositorio
 ATIVI10- R= LUCIANO GITHUB    
 
+2-
 layout da passhop
 ativiASSINCRONA- R=github vector
 
+3-
 1 - Faça uma listagem de 6 filmes de sua escolha com array e faça eles serem impressos no console.log através de repetição
 2 - Fazer a tabuada de 8 com repetições
 3 - Fazer as tabuadas de 1 até 10 com repetições
 ATIVI3- R= github vector
 
+4-
 salario familia
 R= github vector
 
 
+5-
 Tente clonar o site da Netflix utilizando apenas os conhecimentos passados até agora durante as aulas!
 ATIVIEXTRA-R=github luciano
 
 
+6-
 Tente clonar o site do Spotfy utilizando apenas os conhecimentos passados até agora durante as aulas!
 AtiviExtra-R= github vector
 
 
+7-
 1. Ler três números diferentes e mostrá-los em ordem crescente. Idem para ordem
 decrescente.
-
 2.Ler 4 números inteiros correspondentes  a números apostados em uma loteria. Ler os 3 números sorteados. Informar quantos acertos o apostador fez.
-
 3. Fazer uma calculadora que aceite todas as 4 operações (+,-,*,/)
-
 4. Faça um programa utilizando função ou procedimento que leia 5 números e informe quantos desses números  são maiores que 10.
-
 5. Faça um sistema de login onde o usuario poderá logar em um programa se usuario e senha forem "ADM", faça o login, senão volte uma mensagem de erro
-
 6. faça o cadastro de 3 usuarios com os vetores, nomeUsuario e senhaUsuario
 REVISAO-LOGICA DE PROGRAMAÇÃO
 
-
+8-
 1) Uma loja está levantando o valor total 3 mercadorias em estoque. Escreva um algoritmo que permita a entrada das seguintes informações:
 a) o valor de cada mercadoria. Ao final imprimir o valor total em estoque e a média de valor das mercadorias.
-
 b)E AGORA ele também salvará os valores de cada mercadoria e seu nome!
-
 2)Faça um algoritmo para ler 10 números e armazenar em um vetor, após a leitura de todos eles, o algoritmo deverá escrever eles de forma inversa (Desconsiderando os valores dos números)
 QUESTAO DE LOGICA DE PROGRAMAÇÃO 7
 
 
+9-
 peixe grande-ativi6
 R= githubVector
 
+10-
 cafeblog com nav-ativi5 R=githubVector
 
 
