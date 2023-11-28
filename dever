@@ -12784,6 +12784,102 @@ senao
 fimse
 fimalgoritmo
 
+3-Algoritmo "semnome"
+
+Var
+option, n1, n2, i, res: real
+
+Inicio
+ESCREVAL("Escolha a operação que deseja calcular:")
+escreval("1 para +")
+escreval("2 para -")
+escreval("3 para x")
+escreval("4 para /")
+leia(option)
+
+   escreval("Digite o 1º número que deseja calcular:")
+   leia(n1)
+      escreval("Digite o 2º número que deseja calcular:")
+   leia(n2)
+
+   escolha option
+   caso 1
+        res<- n1 + n2
+        escreval("Resultado: ", res)
+   caso 2
+        res<- n1 - n2
+        escreval("Resultado: ", res)
+   caso 3
+        res<- n1 * n2
+        escreval("Resultado: ", res)
+   caso 4
+        res<- n1 / n2
+        escreval("Resultado: ", res)
+   fimescolha
+
+Fimalgoritmo
+
+4-Algoritmo "semnome"
+
+Var
+n1, n2,n3, n4, n5, cont: real
+
+Inicio
+escreval("Digite 5 números:")
+escreval("1º número:")
+leia(n1)
+escreval("2º número:")
+leia(n2)
+escreval("3º número:")
+leia(n3)
+escreval("4º número:")
+leia(n4)
+escreval("5º número:")
+leia(n5)
+
+se n1 > 10 entao
+   cont<- cont + 1
+fimse
+se n2 > 10 entao
+   cont<- cont + 1
+fimse
+se n3 > 10 entao
+   cont<- cont + 1
+fimse
+se n4 > 10 entao
+   cont<- cont + 1
+fimse
+se n5 > 10 entao
+   cont<- cont + 1
+fimse
+
+escreval("Números digitados maiores que 10 = ",cont)
+
+Fimalgoritmo
+
+5-Algoritmo "semnome"
+
+Var
+Usuario, senha: caractere
+
+Inicio
+escreval("Usuário:")
+leia(Usuario)
+
+escreval("Senha:")
+leia(senha)
+
+se login = "ADM" E SENHA = "ADM" entao
+limpatela
+   escreval("Você está conectado. Seja Bem-Vindo/a")
+fimse
+
+se Usuario <> "ADM" e senha <> "ADM" entao
+   escreval("Usuario ou Senha errado")
+fimse
+
+Fimalgoritmo
+
 
 
 8-
