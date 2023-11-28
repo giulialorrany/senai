@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Crie o seu carro</h1>
+
+    <form action="">
+        <input type="text" id="marca">
+        <input type="text" id="modelo" >
+        <input type="date" id="ano">
+        <input type="color" id="cor">
+        <input type="number" id="velocidadeMax">
+        <button type="button" id="btnCarro">CRIAR CARRO</button>
+    </form>
+
+
+
+
+
+    <script>
+    //     crie um objeto chamado carro
+                               
+    //                            marca: string
+    //                            modelo:string
+    //                            ano:numero
+    //                            cor:string
+    //                            veloMax: numero
+    //                            velAtual: num (atualmente 0)
+                               
+    //         crie um argumento acelerar   que receba numero
+    //            como argumento e aumente a vel atual do carro
+    //  por esse num   certifique se de que a vel atual nao ultrapasse
+    //  a vel max do carro
+
+        class Carro{
+            constructor(marca, modelo, ano, cor, velocidadeMax, velocidadeAtual){
+                this.marca = marca;
+                this.modelo = modelo;
+                this.ano = ano;
+                this.cor = cor;
+                this.velocidadeMax = velocidadeMax;
+                this.velocidadeAtual = velocidadeAtual;
+            }
+            acelerar(velocidadeAcelerada){
+                if(velocidadeAcelerada > 0){
+                    console.log("Velocidade inválida");
+                }else if(velocidadeAcelerada > this.velocidadeAtual + velocidadeMax){
+                    return "velocidade inválida";
+                }else{
+                    this.velocidadeAtual += velocidadeAcelerada;
+                    return "Você acelerou " + velocidadeAcelerada + "km";
+                }
+                
+                
+                // && velocidadeAcelerada <= this.velocidadeMax + this.velocidadeAcelerada){
+                //     this.velocidadeAtual = velocidadeAtual +velocidadeAcelerada;
+                //     console.log(velocidadeAcelerada);
+                // }
+            }
+
+        }
+
+        
+        var golf = new Carro("audi", "golf", 2023, "azul", 250);
+
+    </script>
+</body>
+</html>
