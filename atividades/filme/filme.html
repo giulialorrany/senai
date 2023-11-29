@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Filme</title>
+</head>
+<body>
+    <main>
+        <div>  
+            <h1>Cadastre seu filme aqui</h1>
+
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome">
+
+            <label for="nome">Descrição:</label>
+            <input type="text" id="descricao">
+
+            <label for="nome">Data:</label>
+            <input type="date" id="data">
+            
+            <label for="nome">Diretor:</label>
+            <input type="text" id="diretor">
+
+            <label for="nome">Categoria:</label>
+            <input type="text" id="categoria">
+
+            <input type="button" id="btnCadastrar">Cadastrar
+
+
+            <input type="button" id="btnListar">Listar
+        </div>
+        <div id="salvo">
+                <H3></H3>
+        </div>
+        <div>
+            <p id=""></p>
+        </div>
+    </main>
+
+    <script>
+        class Filme{
+            constructor(valorNome, valorDescricao, valorData, valorDiretor, valorCategoria){
+                // criando a var dos objetos
+                this.nome = valorNome;
+                this.descricao = valorDescricao;
+                this.data = valorData;
+                this.diretor = valorDiretor;
+                this.categoria = valorCategoria;
+            }
+        }
+
+        // salvar(filme){}
+
+        var btnCadastrar = document.querySelector('#btnCadastrar');
+
+        btnCadastrar.addEventListener("click", cadastrar);
+        btnListar.addEventListener("click", listar);
+        var filmes = [];
+
+
+        function cadastrar(){
+                let nomeInput = document.querySelector('#nome').value;
+                let descricaoInput = document.querySelector('#descricao').value;
+                let dataInput = document.querySelector('#data').value;
+                let diretorInput = document.querySelector('#diretor').value;
+                let categoriaInput = document.querySelector('#categoria').value;
+         
+            
+                filmes.push(new Filme(nomeInput, descricaoInput, dataInput, diretorInput, categoriaInput));
+                console.log(filmes);
+                
+
+        }
+
+        function listar(){
+            let salvo = document.querySelector('#salvo');
+
+            salvo.innerHTML = "";
+            // funçao anonima
+            filmes.forEach((elemento) => { 
+                salvo.innerHTML += `<div class="post"><h3>Nome: ${elemento.nome}<\h3><p>${elemento.descricao}<\p>  
+                <p>${elemento.data}<\p><p>${elemento.diretor}<\p><p>${elemento.categoria}<\p></div>`;
+                
+            });
+        }
+
+
+    </script>
+</body>
+</html>
