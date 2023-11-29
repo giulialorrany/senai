@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    
+    <span style="color:blue">Meu mundo</span>
+
+    <p class="claro" id="classList">Mundo</p>
+
+
+    <script>
+        var frase = "hello mundo";
+        console.log(frase);
+
+        console.log(frase.replace("mundo", "word"));
+        console.log(frase.replaceAll("mundo", "word"));
+
+        // SETATRIBUTE
+        Document.querySelector("span").setAtribute("style", "color:green;")
+
+        // CLASSLIST -> gerenciar classe
+        document.querySelector("#classList").classList.add("claro");
+
+        if(elemento,classList.contains("claro")){
+            
+            elemento.classList.toggle("escuro")
+            elemento.classList.replace("claro", "escuro")
+        }
+
+
+        // index of\ includes
+        var frutas = ['mamao', 'melancia', 'banana','maça']
+
+        // includes -> true or false
+        console.log(frutas.includes("goiaba"));
+
+        // indexOf -> o valor indice do array (caso nao exista. -1)
+        console.log(frutas.indexOf("goiaba"));
+
+
+        // if(frutas.includes("goiaba" ==))
+
+
+
+
+
+
+
+        setTimeout(() => {
+            alert("bom dia");
+        }, 2000);
+
+        console.log("seja bem vindo");
+
+        
+    </script>
+</body>
+</html>
