@@ -1,0 +1,68 @@
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <textarea name="textBloco" id="textBloco" cols="30" rows="10"></textarea>
+        <input type="text" id="removeTermo" placeholder="Trocar termo">
+        <input type="text" id="addTermo" placeholder="Adcionar termo ">
+
+        <button type="button" id="btnTrocar">Trocar termo</button>
+        <button type="button" id="btnTrocarTodos">Trocar todos os termos</button>
+
+        <hr>
+
+        <SECTION ID="JOGO">
+            <input type="search">
+            <button type="button">Pesquisar</button>
+            <span id="resposta"></span>
+        </SECTION>
+
+            <script>
+                // declaracao de variaveis -> seletores
+            var btnTrocar = document.querySelector("#btnTrocar");
+            var btnTrocarTodos = document.querySelector("#btnTrocarTodos");
+
+            //   criacao dos eventos
+                btnTrocar.addEventListener("click", trocarUmTermo);
+                btnTrocarTodos.addEventListener("click", trocarTodosTermos);
+
+                // funcao dos eventos (trocar termos removendo e adcionando)
+                function trocarUmTermo(){
+                    let blocoDeTexto = document.querySelector("#textBloco");
+                    let addTermo = document.querySelector("#addTermo").value;
+                    let removeTermo = document.querySelector("#removeTermo").value;
+
+                    let blocoDeTextoFormatado = blocoDeTexto.value.replace(removeTermo, addTermo);
+                    console.log(blocoDeTextoFormatado);
+
+                    blocoDeTexto.value = blocoDeTextoFormatado;
+
+
+                    // WHERE HERE SENTIDO?
+
+
+            }
+            function trocarTodosTermos(){
+
+            }   
+
+
+
+            //SECTION JOGO
+                var jogos =["Call of duty", "GTA", "CogumeLouco"];
+
+
+
+
+
+
+
+
+            </script>
+    </body>
+    </html>
