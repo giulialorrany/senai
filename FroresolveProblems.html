@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+        //IDENTIFICAÇÃODE PROBLEMAS-rejeitando e aceitando informações
+        const firstPromise = new Promise((resolve, reject)=>{
+            var nome = "giulia";
+            if(nome =="giulia"){
+                 resolve("O user é a Giulia. Seja bem Vindo(a)!")
+            }else{
+                reject("O user não é a giulia! Acesso negado")
+            }
+        });
+            // THEN -> roda a promessa 
+            // CATCH -> só roda se tiver um erro
+
+        // firstPromise.then((data)=> {
+        //     console.log(data);
+        // })
+        
+        // firstPromise.catch((data)=> {
+        //     console.log(data);
+        //  })
+
+
+
+        // async <- não tem que ler necessariamente na ordem assincrona(de cima pra baixo)
+            // await <-  espere esse ato terminar(calma ae)
+
+
+            // objectEntries
+            const cursos = {
+                    FrontEnd: 60,
+                    BancoDeDados: 40,
+                    CyberSecurity: 100,
+                    Python: 80
+            }
+
+            // KEYS devolve o nome do atributo
+            // const cursosKey = Object.keys(cursos); console.log(cursosKey);
+           
+            // var pesquisa = prompt("Insira Curso");
+            // var processo = cursosKey.indexOf(pesquisa);
+    
+            // if(processo == -1){
+            //     alert(`Não foi encontrado. Quer adcionar?`);
+            //     var novo = confirm();
+            //     if(novo == true){
+            //         cursosKey.push(pesquisa);
+            //         alert(`adcionado`);
+            //     }
+            // }else{
+            //     alert(`deu baum. Curso: ${pesquisa}`);
+            // }
+            // console.log(cursosKey.indexOf("BancoDeDados"));
+
+            // // ENTRIES -> devolve tanto nome do atributo quanto valor
+            // const cursosEntries = Object.entries(cursos);
+            // console.log(cursosEntries);
+
+
+            // var resposta = document.querySelector("#resposta");
+            // cursosArray = ["FrontEnd", "BancoDeDados", "CyberSecurity", "Python"];
+            // var curssMap = cursosArray.map((cadaElemento)=> "<li>Cursos :"+cadaElemento+"<\li>");
+
+            // resposta.innerHTML = `O map faz um processo para cada elemento do nosso array! Olha só`
+
+                const nome= "giulia";
+                const sobrenome = "Canabarro";
+                const cartao = "1221";
+
+                var nomeCompleto = sobrenome.pasStart(11, nome);
+                
+
+
+                // netflix Clone githubprofNormal
+
+
+
+    </script>
+</body>
+</html>
