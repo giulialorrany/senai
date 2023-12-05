@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        #caixa{
+
+        }
+    </style>
+</head>
+<body>
+    <button type="button" id="animacao1">animacao1</button>
+    <button type="button" id="animacao2">animacao2</button>
+    <button type="button" id="animacao3">animacao3</button>
+    <button type="button" id="animacao4">animacao4</button>
+    <button type="button" id="animacao5">animacao5</button>
+    <button type="button" id="animacao6">mostrar</button>
+    <button type="button" id="animacao7">mostrar esconder</button>
+
+    <div id="caixa">
+        elemento
+    </div>
+
+</body>
+<script>
+    var caixa = $('#caixa');
+
+    $("#animacao1").on('click', function(){
+        caixa.animate({width:"500px", height: "500px", borderRadius: "100%"})
+    });
+
+    $("#animacao2").on('click', function(){
+        caixa.animate({width:"300px", height: "300px", borderRadius: "0%"}).animate
+    });
+    
+    $("#animacao3").on('click', function(){
+        caixa.animate({marginTop: "300px", marginRight: "100px", rotate: "360deg"})
+
+    });
+    
+    $("#animacao3").on('click', function(){
+        caixa.animate({width:"500px", height: "500px", borderRadius: "100%"}, {
+            duration: 1000, complete :(=> {alert("Se o seu cão. está com depressão, animaCÃO")})
+        }
+        )
+    });
+
+
+
+
+</script>
+</html>
