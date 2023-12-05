@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .temaClaro{
+            background-color: white;
+            color:black;
+            transition: 0.5s;
+        }
+        .temaClaro button{       
+            background-color: black;
+            color:white;
+        }
+        .temaEscuro{
+            background-color: black;
+            color: white;
+            transition: 0.5s;
+
+        }
+        .temaEscuro button{       
+            background-color: white;
+            color:black;
+        }
+    
+    </style>
+</head>
+
+<body>
+        <hr>
+        <h1>ATIVIDADE-1</h1>
+
+        <input type="number" id="numeroEscolhido" max="10">
+        <button></button>
+        <div id="resultadoCalculo"></div>
+
+        <hr>
+        
+        <h1>ATIVIDADE-2</h1>
+        <button type="button" id="trocarTema" class="temaClaro">Tema Escuro</button>
+
+
+        <script src="jquery-3.7.1.js"></script>
+    <script>
+        $("btnCalcular").on("click", function(){
+            let numeroEscolhido = Number($("#numeroEscolhido").val());
+            for(let i = 1; i<= 10; i++){
+                document.querySelector("#resultadoCalculo").innerHTML += `${i}x${numeroEscolhido} = ${i * numeroEscolhido} <br>`;
+            }
+        })
+
+        // SCRIPT-2
+        var btnTema = $('#trocarTema');
+        var body = $('body');
+
+        btnTema.on('click', function(){
+            if(btnTema.hasClass('temaClaro')){
+                btnTema.removeClass('temaClaro');
+                btnTema.addClass('temaEscuro');
+                btnTema.text('Tema Claro');
+
+                body.removeClass('temaClaro');
+                body.addClass('temaEscuro');
+            
+
+            }else{
+                btnTema.hasClass('temaEscuro');
+                btnTema.removeClass('temaEscuro');
+                btnTema.addClass('temaClaro');
+                btnTema.text('Tema Escuro');
+
+                body.removeClass('temaEscuro');
+                body.addClass('temaClaro');
+            }
+        })
+
+
+
+    </script>
+</body>
+</html>
