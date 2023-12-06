@@ -13,6 +13,15 @@ https://vagas.dbccompany.com.br/vagas
 
 https://stefanini.gupy.io/candidates/applications/376380029?cvUpdated=true -> TESTE
 
+drama = forte 
+dor = vulneravel 
+
+reconhecimento = masculino
+compreensao = feminino
+
+firme= paciencia = fem =
+leve = humildade
+
 
 faça uma página de cadastramento de filmes onde o usuario possa salvar um filme e suas informações como nome, descrição,
 data, diretor e categoria e liste ela de alguma forma em algum elemento HTML!
