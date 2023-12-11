@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confeitaria</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+        }
+        header{
+            text-align: center;
+            
+            background-color: aquamarine;
+        }
+        #cabecalho h1{
+            padding: 30px 0px;
+        }
+        /* #cabecalho{
+            background-color: aquamarine;
+        } */
+        nav{
+            padding: 7px 0px;
+            background-color: palevioletred;
+        }
+        nav li {
+            font-size:19px;
+            padding: 20px;
+            display:inline;
+            text-decoration: underline;
+        }
+
+        #conteudo{
+        }
+        #contato{
+            
+            display:flex;
+            
+            flex-direction: column;
+            margin: 10vh 12vh 10px 7vh;
+            justify-content: right;
+        }
+        #contato li{
+            font-size: 20px;
+            padding: 5px 10vh;
+            justify-content: right;
+            text-decoration: none;
+            display:flex;
+            text-align: left;
+        }
+        #bolos{
+            width: 50%;
+            height: 40%;
+            margin: -20vh 20vh 10px 5vh;
+            /* display:flex; */
+            /* justify-content: right; */
+        }
+
+        #banner img{
+            width: 65%;
+            margin: 8px 17% 40px 17%;
+            display: flex;
+            justify-content: center;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        
+            <div id="cabecalho">
+                <h1>Alecrim Dourado</h1>
+            </div>
+            <nav>
+            <div>
+                    <li><a href="#" class="paginaInicial">Home</a></li>
+                    <li><a href="#">Cardápio</a></li>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="conteudo">
+            <div>
+                <div id="contato">
+                    <li>Telefone:(61)992351058</li>
+                    <li>Email:giulia@aluno.senai.br</li>
+                    <li>Whatzapp:(61)994451408</li>
+                    <li>Instagram:giuli4r</li>
+                    <!-- <p>Telefone de contato:</p>
+                    <p>Email de contato:</p>
+                    <p>Whatzapp:</p>
+                    <p>Instagram:</p> -->
+                </div>
+                <img src="bolos.avif" id="bolos" alt="">
+            </div>
+        </section>
+        <div id="banner">
+            <img src="moto.jpg" alt="">
+        </div>
+    </main>
+    
+</body>
+</html>
