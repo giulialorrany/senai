@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+        }
+        body{
+            background-color: rgba(45, 138, 19, 0.534);
+            color:aliceblue;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            background-image: no repeat linear-gradient(to top, #7676, white);/*gradiente */
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+         
+        }
+        form{
+          
+        }
+
+        form > div{
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .preench:hover{
+           
+        }
+       .preench:focus{
+           
+        background-image: linear-gradient(to bottom, rgba(49, 0, 165, 0.712), white);
+            /* background-color: aqua; */
+            border:none;
+        }
+        .buttom{
+            justify-content: center;
+            align-items: center;
+            width: 40%;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Login</h1>
+
+    <form actiom="login.js" method="POST">
+        <div>
+            <label for="email">Email:</label>
+            <input type="text" id="email" class="preench" name="email">
+        </div><br>
+        <div>
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" class="preench" name="senha">
+        </div><br>
+        <input type="submit" value="Enviar" class="buttom">
+    </form>
+</body>
+</html>
+
+<!-- ferramenta google dev tools -->
