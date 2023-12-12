@@ -52,7 +52,9 @@
         border-bottom:black 1px solid;
         justify-content: right;
     }
-    
+     
+
+
     #blocoOne{
         display: flex;
         justify-content: left;
@@ -177,7 +179,7 @@
         padding:10px;
         width: 25%;
         border:1px solid;
-        margin: 4vh 10vh 0vh 10vh;
+        margin: 4vh 10vh 0vh 4vh;
       }
       .catalogo p{
         margin: 0vh 10vh;
