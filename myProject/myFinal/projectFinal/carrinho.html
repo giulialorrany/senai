@@ -13,6 +13,265 @@
         border:1px solid;
         border-radius: 5px;
     }
+    .addShimeji{
+      width: 80vh;
+    }
+    .loginOut{
+      margin:9vh 37vh 0px 10vh;
+    }
+    .loginOut p{
+      background-color: darkgrey;
+            color:white;
+            padding:1px 2px;
+        }
+      #adcionados h3, .preco{
+        margin:44px 50px ;
+        font-weight: bold;
+        font-family:monospace;
+      }
+      .preco{
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+ 
+</style>
+<body>
+    <header>
+        <section id="cabecalho">
+            <div class="loginOut">
+              <p><a href="login.html">Login Out</a></p>
+            </div>
+            <!-- trabalhar com flexbox aqui(na organização, alinhamento) -->
+            <div id="blocoOne">
+              <img src="pictures/coguIcon.jpg" class="logoCogu" alt="" > 
+              <h1>CogumeLouco</h1>
+              <!-- link = https://br.pinterest.com/pin/730568370797703586/ -->
+            </div>    
+      
+            <div id="blocoTwo">
+              <img src="pictures/lupaLogo2.png" alt="" class="lupaLogo" > <!-- link = https://www.iconfinder.com/icons/2178428/find_lupa_search_icon-->
+              <input id="inputSearch" type="text">
+            </div>
+      
+            <div id="blocoTree">
+              <ul type="none">
+                  <li><a class="home" href="home.html">Home</a></li>
+                  <li><a class="catalogo" href="catalogo.html">Catálogo</a></li>
+                  <li><a class="sobreNos" href="sobrenos.html">Sobre nós</a></li>
+                  <li><a class="carrinho  paginaAtual" href="carrinho.html">Carrinho</a></li>
+                  <li><a class="blog" href="blog.html">Blog</a></li>
+              </ul>
+            </div>
+    </section>
+    </header>
+    <main>
+        <div id="product">
+
+
+          <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5" aria-label="Slide 6"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="pictures/shimeji.jpg" class="d-block w-100 addShimeji">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Clique</h5>
+                  <p>Para adcioná-lo ao carrinho</p>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="pictures/portobello.jpg" class="d-block w-100 addPortobello ">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Secl</h5>
+                  <p>Some representative placeholder content for the second slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="pictures/shitake.jpg" class="d-block w-100 addShitake">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Clique</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="pictures/cantarelo.jpg" class="d-block w-100  addCantarelo">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="pictures/jubadeleao.webp" class="d-block w-100 addJubaleao">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="pictures/champion.webp" class="d-block w-100 addChampion">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+            
+          </div>
+
+          
+        </div>
+
+        <section id="adcionados">
+          <h3>Carrinho:</h3>
+          <hr>
+            <div class="add1">
+              <img id="addImg1" src="" >
+                <p id="addP1"></p>
+                <hr>
+            </div>
+            <div class="add2">
+              <img id="addImg2" src="" >
+                <p id="addP2"></p>
+                <hr>
+            </div>
+            <div class="add3">
+              <img id="addImg3" src="" >
+                <p id="addP3"></p>
+                <hr>
+            </div>
+            <div class="add4">
+              <img id="addImg4" src="" >
+                <p id="addP4"></p>
+                <hr>
+            </div>
+            <div class="add5">
+              <img id="addImg5" src="" >
+                <p id="addP5"></p>
+                <hr>
+            </div>
+            <div class="add6">
+              <img id="addImg6" src="" >
+                <p id="addP6"></p>
+                <hr>
+            </div>
+
+            <p class="preco">Preço Total:<span id="res"></span></p>
+
+        </section>
+
+
+    </main>
+    
+    <footer>
+      <p>CopyRight  @giulia Lorrany-2023</p>
+    </footer>
+
+    <script>
+ var adcionados = document.querySelector('#adcionados');
+
+var addShimeji = document.querySelector('.addShimeji');
+var addPortobello = document.querySelector('.addPortobello');
+var addShitake = document.querySelector('.addShitake');
+var addCantarelo = document.querySelector('.addCantarelo');
+var addJubaleao = document.querySelector('.addJubaleao');
+var addChampion = document.querySelector('.addChampion');
+
+var addP1 = document.querySelector('#addP1');
+var addP2 = document.querySelector('#addP2');
+var addP3 = document.querySelector('#addP3');
+var addP4 = document.querySelector('#addP4');
+var addP5 = document.querySelector('#addP5');
+var addP6 = document.querySelector('#addP6');
+
+
+var addImg1 = document.querySelector('#addImg1');
+var addImg2 = document.querySelector('#addImg2');
+var addImg3 = document.querySelector('#addImg3');
+var addImg4 = document.querySelector('#addImg4');
+var addImg5 = document.querySelector('#addImg5');
+var addImg6 = document.querySelector('#addImg6');
+
+var tot = 0;
+
+
+
+      addShimeji.addEventListener("click", addItem1)
+      function addItem1(){
+          addImg1.setAttribute("src",'pictures/shimeji.jpg');
+          addP1.innerHTML = 'Cogumelo Shimeji 300g<br>30,00R$';
+          tot += 30.00;
+      }
+      addPortobello.addEventListener("click", addItem2)
+      function addItem2(){
+          addImg2.setAttribute("src",'pictures/portobello.jpg');
+          addP2.innerHTML = 'Cogumelo PortoBello 300g<br>25,00R$';
+          tot += 25.00;
+      }
+      addShitake.addEventListener("click", addItem3)
+      function addItem3(){
+          addImg3.setAttribute("src",'pictures/shitake.jpg');
+          addP3.innerHTML = 'Cogumelo Shitake 300g<br>28,00R$';
+          tot += 28.00;
+      }
+      addCantarelo.addEventListener("click", addItem4)
+      function addItem4(){
+          addImg4.setAttribute("src",'pictures/cantarelo.jpg');
+          addP4.innerHTML = 'Cogumelo Cantarelo 300g<br>26,00R$';
+          tot += 26.00;
+      }
+      addJubaleao.addEventListener("click", addItem5)
+      function addItem5(){
+          addImg5.setAttribute("src",'pictures/jubaleao.webp');
+          addP5.innerHTML = 'Cogumelo Juba de Leão 300g<br>25,00R$';
+          tot += 25.00;
+      }
+      addChampion.addEventListener("click", addItem6)
+      function addItem6(){
+          addImg6.setAttribute("src",'pictures/champion.webp');
+          addP6.innerHTML = 'Cogumelo Champion 300g<br>22,00R$';
+          tot += 22.00;
+      }
+
+
+      var res = document.querySelector('#res');
+      res.innerHTML= tot;
+
+    </script>
+    
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>   
+</body>
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    #product{
+        border:1px solid;
+        border-radius: 5px;
+    }
     #product button{
       background: green;
     }
@@ -156,4 +415,4 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>   
 </body>
-</html>
+</html> -->
