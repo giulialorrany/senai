@@ -1,3 +1,216 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" >
+</head>
+<style>
+    .produtos{
+        display:inline;
+        /* border:1px solid red; */
+    }
+    .produtos img{
+        border-radius:4px;
+        width: 150px;
+      
+    }
+    .produtos .iconCar {
+        border:none;
+        background-color: white;
+        width: 60px;
+    }
+    /* fixa-LO A ESQUERDA */
+    main{
+        /* display:inline-block; */
+        display: flex;
+        flex-direction: row-reverse;
+
+    }
+    .catalogo{
+        width: 100%;
+        display:flex;
+        justify-content: left;
+      }
+    #selecionados{
+        display:flex;
+        align-items: end;
+        flex-direction: column;
+        border-left: 2px solid rgba(156, 46, 247, 0.678); 
+        width: 24vh;
+        height: 100vh;
+
+    }
+    #selecionados img{
+      display: inline-block;
+      padding-left:7px;
+      width: 60px;
+      margin-bottom:-8px;
+    }
+    
+    #selecionados span {
+      color:rgb(41, 40, 40);
+      margin:0px 35px 3px 5px;
+      font-size: 12px;
+      
+      font-weight: bold;
+    }
+    #selecionados span p{
+      margin-top:3px;
+    }
+    #selecionados span p:hover{
+      color:rgb(243, 52, 52);
+    }
+
+    #catalogoMenu{
+        width: 70%;
+        height: 100vh;
+    }
+
+    .add{
+        width: 18vh;
+    }
+    .add img{
+        
+        width: 30px;
+    }
+    /* se eu clicar no iconCar adcione ao bloco 'adcionado' */
+
+
+</style>
+<body>
+    <header>
+        <section id="cabecalho">
+        
+            <!-- trabalhar com flexbox aqui(na organização, alinhamento) -->
+            <div id="blocoOne">
+              <img src="pictures/coguIcon.jpg" class="logoCogu" alt="" > 
+              <h1>CogumeLouco</h1>
+              <!-- link = https://br.pinterest.com/pin/730568370797703586/ -->
+            </div>    
+      
+            <div id="blocoTwo">
+              <img src="pictures/lupaLogo2.png" alt="" class="lupaLogo" > <!-- link = https://www.iconfinder.com/icons/2178428/find_lupa_search_icon-->
+              <input id="inputSearch" type="text">
+            </div>
+      
+            <div id="blocoTree">
+              <ul type="none">
+                  <li><a class="home" href="index.html">Home</a></li>
+                  <li><a class="catalogo paginaAtual" href="catalogo.html">Catálogo</a></li>
+                  <li><a class="sobreNos" href="sobrenos.html">Sobre nós</a></li>
+                  <li><a class="#" href="carrinho.html">Carrinho</a></li>
+                  <li><a class="#" href="blog.html">Blog</a></li>
+              </ul>
+            </div>
+    </section>
+    </header>
+    <main>  
+        <div id="selecionados">
+            <div>
+                <img id="imgP1" src="" alt="">
+                <p id="p1"></p>
+            </div>
+            <div>
+                <img id="imgP2" src="" alt="">
+                <p id="p2"></p>
+            </div>
+            <div>
+                <img id="imgP3" src="" alt="">
+                <p id="p3"></p>
+            </div>
+            <div>
+              <img id="imgP4" src="" alt="">
+                <p id="p4"></p>
+            </div>
+            <div>
+              <img id="imgP5" src="" alt="">
+                <p id="p5"></p>
+            </div>
+            <div>
+              <img id="imgP6" src="" alt="">
+                <p id="p6"></p>
+            </div>
+            <span>
+              <a href="carrinho.html"><img src="pictures/iconCar2.jpg"></a>
+              <p>ir ao carrinho <br>e adcionar items</p>
+            </span>
+        </div>
+
+        <div id="catalogoMenu">
+
+                <div class="row catalogo" >
+                                    
+                    <div class="produtos col-4 produtoShimeji">
+                    <img src="pictures/shimeji.jpg" >
+                    <p>Shimeji 300g<br>30,00R$</p>
+                    </div>
+                                
+                    <div class="produtos col-4 produtoPortobello">
+                        <img src="pictures/portobello.jpg"  id="portoBello">
+                    <p>PortoBello 300g<br>25,00R$</p>
+                    </div>
+
+                    <div class="produtos col-4 produtoShitake">
+                        <img src="pictures/shitake.jpg" >
+                    <p>Shitaki 300g<br>28,00R$</p>
+                    </div>
+                </div>
+                <div class="row catalogo" >
+                    <div class="produtos col-4 produtoCantarelo">
+                    <img src="pictures/cantarelo.jpg" >
+                    <p>Cantarelo 300g<br>26,00R$</p>
+                    </div>
+                                
+                    <div class="produtos col-4 produtoJubaleao">
+                        <img src="pictures/jubadeleao.webp"  id="jubaLeao">
+                    <p>Juba de Leão 300g<br>25,00R$</p>
+                    </div>
+
+                    <div  class="produtos col-4 produtoChampion">
+                        <img src="pictures/champion2.jpg" >
+                    <p>Champion 300g<br>22,00 R$</p>
+                    </div>
+                </div>
+            
+            </div>       
+
+
+    </main>
+    <footer>
+        <p>CopyRight  -giulia Lorrany-2023</p>
+      </footer>
+    
+      <script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>   
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
