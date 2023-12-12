@@ -1,3 +1,20 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // var iconCar = document.querySelector('.iconCar');
 
 var adcionados = document.querySelector('#selecionados');
