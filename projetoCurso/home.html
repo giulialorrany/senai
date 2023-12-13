@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" >
+    <!-- sites de referencia/inspiração = https://www.fungodequintal.com.br/, https://www.cogunutriarte.com.br/, https://artcogumelos.com.br/ -->
+    <title>Home</title>
+</head>
+<body>
+    
+    <header>
+      <section id="cabecalho">
+        <!-- trabalhar com flexbox aqui(na organização, alinhamento) -->
+        <div id="blocoOne">
+          <img src="pictures/coguIcon.jpg" class="logoCogu" alt="" > 
+          <h1>CogumeLouco</h1>
+          <!-- link = https://br.pinterest.com/pin/730568370797703586/ -->
+        </div>    
+  
+        <div id="blocoTwo">
+          <img src="pictures/lupaLogo2.png" alt="" class="lupaLogo" > <!-- link = https://www.iconfinder.com/icons/2178428/find_lupa_search_icon-->
+          <input id="inputSearch" type="text">
+        </div>
+  
+        <div id="blocoTree">
+          <ul type="none">
+              <li><a class="home paginaAtual" href="home.html">Home</a></li>
+              <li><a class="catalogo" href="catalogo.html">Catálogo</a></li>
+              <li><a class="sobreNos" href="sobrenos.html">Sobre nós</a></li>
+              <li><a class="carrinho "href="carrinho.html">Carrinho</a></li>
+              <li><a class="blog" href="blog.html">Blog</a></li>
+              
+          <span><a href="login.html" id="loginOut">Login out</a></span>
+              
+          </ul>
+          
+        </div>
+</section>
+
+      <!-- CÓDIGO PRA DESENVOLVIMENTO FUTURO  
+        <nav>
+        <ul>
+          <li><a href="#">galeria</a></li>
+          <li><a href="#">options</a></li>
+          <li><a href="#">options</a></li>
+        </ul>
+      </nav> -->
+    </header>    
+        
+    <main>
+        <Section id="promocoes"><!-- mostra seta carregando até passar pro lado caso mouse esteja em cima dela e n seja clicado -->
+         
+          <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img  src="pictures/cogus.jpg"  class="d-block w-100 rounded mx-auto d-block img1" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img class="img2"  src="pictures/cogu4.webp" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img class="img3" src="pictures/cogu2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img class="img4" src="pictures/cogu3.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </Section>
+        <div id="varCogu">
+            <img src="pictures/varCogus2.jpg" class="rounded mx-auto d-block" alt="...">
+            <div id="textBeneficios">
+                <h2>8 Benefícios do Cogumelo:</h2>
+                
+                <ul type="none">
+                    <li>1-Aumentam a saciedade e melhoram o intestino</li>
+                    <li>2-Fazem bem para a saúde cardiovascular</li>
+                    <li>3-Indicados para quem tem diabetes</li>
+                    <li> 4-Melhoram o sistema imunológico</li>
+                    <li>5-Atuam no sistema nervoso e na síntese de energia</li>
+                    <li>6-Fontes de minerais</li>
+                    <li>7-Protegem o cérebro</li>
+                    <li>8-Fontes de vitamina D para vegetarianos e veganos</li>
+                </ul>
+            </div>
+        </div>
+
+        
+    </main>
+    <footer>
+      <p>CopyRight  @giulia Lorrany-2023</p>
+    </footer>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>   
+</body>
+</html>
+
+<!-- DICAS: -->
+        <!--2 colunas = main>(section.container>h2=article)*2 | css{main:display flex, width: 60%/80%, body: flex-direction:column}-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
